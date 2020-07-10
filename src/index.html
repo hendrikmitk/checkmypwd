@@ -81,20 +81,6 @@
 
     </style>
 
-    <div id="container">
-        <h1>check my pwd</h1>
-        <p id="inputSection">
-            <input type=text id="pwdInput" placeholder="enter pwd here" autofocus onchange="checkInputContinuously()" onkeypress="this.onchange()" onpaste="this.onchange()" oninput="this.onchange()">
-        </p>
-        <div id="checklistSection">
-            <p class="pwdSecurityFeature" id="pwdMinLength">Minimum length is 5</p>
-            <p class="pwdSecurityFeature" id="pwdContainsNumber">Contains at least one number</p>
-            <p class="pwdSecurityFeature" id="pwdMaxLength">Maximum length is 10</p>
-            <p class="pwdSecurityFeature" id="pwdContainsSpecialCharacter">Contains at least one special character</p>
-            <p class="pwdSecurityFeature" id="pwdNoSpaces">Does not contain any spaces</p>
-        </div>
-    </div>
-
     <script>
         function checkInputContinuously() {
             const a = document.getElementById("pwdMinLength");
@@ -118,6 +104,21 @@
             if (givenPassword.length < 1) a.style.color = b.style.color = c.style.color = d.style.color = e.style.color = "#000000"; // reset color to black on empty input
         }
     </script>
+
+    <div id="container">
+        <h1>check my pwd</h1>
+        <p id="inputSection">
+            <input type=text id="pwdInput" placeholder="enter pwd here" autofocus onchange="checkInputContinuously()" onkeypress="this.onchange()" onpaste="this.onchange()" oninput="this.onchange()">
+        </p>
+        <div id="checklistSection">
+            <p class="pwdSecurityFeature" id="pwdMinLength">Minimum length is 5</p>
+            <p class="pwdSecurityFeature" id="pwdContainsNumber">Contains at least one number</p>
+            <p class="pwdSecurityFeature" id="pwdMaxLength">Maximum length is 10</p>
+            <p class="pwdSecurityFeature" id="pwdContainsSpecialCharacter">Contains at least one special character</p>
+            <p class="pwdSecurityFeature" id="pwdNoSpaces">Does not contain any spaces</p>
+        </div>
+    </div>
+
 
 </body>
 
