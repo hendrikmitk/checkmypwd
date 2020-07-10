@@ -1,0 +1,13 @@
+# no sass utilities
+.sass-cache/
+*.sass.map
+*.scss.map
+
+# no node_modules and package files
+node_modules
+package.json
+package-lock.json
+
+# no .prettierignore and .cache
+.prettierignore
+.cache
