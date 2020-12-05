@@ -3,62 +3,28 @@
 
 <head>
     <title>check my pwd</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300;400;800&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
-
-        h1 {
-            font-family: "Bangers", cursive;
-        }
-
-    </style>
-
     <div class="h-screen bg-green-200 flex flex-col justify-center items-center">
         <div class="bg-green-100 border-solid rounded-xl border-2 border-gray-400 h-3/6 w-2/6 flex flex-col justify-evenly items-center shadow-md">
             <h1 class="text-7xl text-gray-600">check my pwd</h1>
-            <input id="pwd" class="w-64 h-12 px-4 rounded-lg placeholder-gray-700 placeholder-opacity-75 select-none outline-none" type=text placeholder="Enter pwd here" onchange="inspectInput()" onpaste="this.onchange()" oninput="this.onchange()">
+            <input id="pwd" class="w-64 h-12 px-4 rounded-lg placeholder-gray-700 placeholder-opacity-75 select-none outline-none" type=text placeholder="Enter pwd here">
             <div>
-                <p class="my-2 font-medium" id="pwdMinLength">Minimum length is 8</p>
-                <p class="my-2 font-medium" id="pwdContainsNumber">Contains at least one number</p>
-                <p class="my-2 font-medium" id="pwdMaxLength">Maximum length is 22</p>
-                <p class="my-2 font-medium" id="pwdContainsSpecialCharacter">Contains at least one special character</p>
-                <p class="my-2 font-medium" id="pwdNoSpaces">Does not contain any spaces</p>
+                <p class="security-feature my-2 font-medium" id="security-feature-a">Minimum length is 8</p>
+                <p class="security-feature my-2 font-medium" id="security-feature-b">Contains at least one number</p>
+                <p class="security-feature my-2 font-medium" id="security-feature-c">Maximum length is 22</p>
+                <p class="security-feature my-2 font-medium" id="security-feature-d">Contains at least one special character</p>
+                <p class="security-feature my-2 font-medium" id="security-feature-e">Does not contain any spaces</p>
             </div>
         </div>
     </div>
 
-    <script>
-        function inspectInput() {
-            const a = document.getElementById("pwdMinLength");
-            a.style.color = "#ff0000";
-            const b = document.getElementById("pwdMaxLength");
-            b.style.color = "#008000";
-            const c = document.getElementById("pwdContainsNumber");
-            c.style.color = "#ff0000";
-            const d = document.getElementById("pwdContainsSpecialCharacter");
-            d.style.color = "#ff0000";
-            const e = document.getElementById("pwdNoSpaces");
-            e.style.color = "#008000";
-
-            const pwd = document.getElementById("pwd").value;
-
-            if (pwd.length >= 8) a.style.color = "#008000"; // PWD HAS 8 OR MORE CHARACTERS
-            if (pwd.length > 22) b.style.color = "#ff0000"; // PWD HAS LESS THAN 22 CHARACTERS
-            if (pwd.match(/\d+/g) !== null) c.style.color = "#008000"; // PWD CONTAINS A NUMBER
-            if (pwd.match(/[!@#$%^&§*()_+\-=\[\]{};':"\\|,.<>\/?]/g) !== null) d.style.color = "#008000"; // PWD CONTAINS SPECIAL CHARACTER
-            if (pwd.match(/[ ]+/g) !== null) e.style.color = "#ff0000"; // PWD CONTAINS SPACES
-            if (pwd.length < 1) a.style.color = b.style.color = c.style.color = d.style.color = e.style.color = "#000000"; // RESET COLOR TO BLACK ON EMPTY INPUT
-        }
-    </script>
+    <script type="text/javascript" src="./app.js"></script>
 
 </body>
 

@@ -4,7 +4,7 @@ A simple app that checks a password for common security features.
 
 ## Description
 
-One of my first projects was a password validator. It wasn't quite good practise, so I decided to do a rebuild. It's built with simple HTML, Tailwind CSS and Vanilla JS. Javascript and CSS parts are inline.
+One of my first projects was a password validator. It wasn't quite good practise, so I decided to do a rebuild. It's built with simple HTML, Tailwind CSS and Vanilla JS.
 
 ## Roadmap
 
