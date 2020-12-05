@@ -22,6 +22,20 @@
 
     </style>
 
+    <div class="h-screen bg-green-200 flex flex-col justify-center items-center">
+        <div class="bg-green-100 border-solid rounded-xl border-2 border-gray-400 h-3/6 w-2/6 flex flex-col justify-evenly items-center shadow-md">
+            <h1 class="text-7xl text-gray-600">check my pwd</h1>
+            <input id="pwd" class="w-64 h-12 px-4 rounded-lg placeholder-gray-700 placeholder-opacity-75 select-none outline-none" type=text placeholder="Enter pwd here" onchange="inspectInput()" onpaste="this.onchange()" oninput="this.onchange()">
+            <div>
+                <p class="my-2 font-medium" id="pwdMinLength">Minimum length is 8</p>
+                <p class="my-2 font-medium" id="pwdContainsNumber">Contains at least one number</p>
+                <p class="my-2 font-medium" id="pwdMaxLength">Maximum length is 22</p>
+                <p class="my-2 font-medium" id="pwdContainsSpecialCharacter">Contains at least one special character</p>
+                <p class="my-2 font-medium" id="pwdNoSpaces">Does not contain any spaces</p>
+            </div>
+        </div>
+    </div>
+
     <script>
         function inspectInput() {
             const a = document.getElementById("pwdMinLength");
@@ -45,20 +59,6 @@
             if (pwd.length < 1) a.style.color = b.style.color = c.style.color = d.style.color = e.style.color = "#000000"; // RESET COLOR TO BLACK ON EMPTY INPUT
         }
     </script>
-
-    <div class="h-screen bg-green-200 flex flex-col justify-center items-center">
-        <div class="bg-green-100 border-solid rounded-xl border-2 border-gray-400 h-3/6 w-2/6 flex flex-col justify-evenly items-center shadow-md">
-            <h1 class="text-7xl text-gray-600">check my pwd</h1>
-            <input id="pwd" class="w-64 h-12 px-4 rounded-lg placeholder-gray-700 placeholder-opacity-75 select-none outline-none" type=text placeholder="Enter pwd here" onchange="inspectInput()" onpaste="this.onchange()" oninput="this.onchange()">
-            <div>
-                <p class="my-2 font-medium" id="pwdMinLength">Minimum length is 8</p>
-                <p class="my-2 font-medium" id="pwdContainsNumber">Contains at least one number</p>
-                <p class="my-2 font-medium" id="pwdMaxLength">Maximum length is 22</p>
-                <p class="my-2 font-medium" id="pwdContainsSpecialCharacter">Contains at least one special character</p>
-                <p class="my-2 font-medium" id="pwdNoSpaces">Does not contain any spaces</p>
-            </div>
-        </div>
-    </div>
 
 </body>
 
