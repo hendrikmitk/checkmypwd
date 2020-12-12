@@ -14,6 +14,7 @@ n/a
 
 -   [x] re-styling with Tailwind CSS
 -   [ ] make web app fully responsive
+-   [ ] expand security-feature on input
 
 ## Inspirations
 
