@@ -1,1 +1,58 @@
-<!DOCTYPE html><html lang="en"><head><title>check my pwd</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"><link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"><link rel="stylesheet" href="/style.fb9c44b2.css"></head><body> <div class="bg-gradient-to-r flex font-mono from-indigo-300 items-start justify-center md:items-center min-h-screen to-purple-400"> <div class="flex flex-col justify-center lg:w-3/4 px-8"> <h1 class="lg:pb-6 md:pt-0 opacity-70 pb-8 pt-16 text-4xl text-center text-gray-900 uppercase">checkmypwd</h1> <input id="pwd" class="bg-transparent border-b-4 border-gray-700 border-opacity-50 duration-200 ease-in-out focus:border-gray-900 focus:border-opacity-70 focus:placeholder-gray-900 focus:placeholder-opacity-70 lg:mx-20 lg:my-2 outline-none placeholder-gray-700 placeholder-opacity-50 px-8 py-4 select-none text-2xl transition" type="text" placeholder="Enter pwd here"> <div class="bg-gray-500 bg-opacity-10 mt-12 mx-8 mx-auto px-6 py-4 rounded-sm shadow-inner space-y-4 text-center text-lg"> <p id="security-feature-a">Minimum length is 8</p> <p id="security-feature-b">Contains at least one number</p> <p id="security-feature-c">Maximum length is 22</p> <p id="security-feature-d">Contains a special character</p> <p id="security-feature-e">Does not contain any spaces</p> </div> </div> </div> <script type="text/javascript" src="/app.62a9d670.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>check my pwd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="/style.469473a3.css">
+</head>
+
+<body>
+
+    <div class="flex items-start justify-center min-h-screen font-mono md:items-center bg-gradient-to-r from-indigo-300 to-purple-400">
+        <div class="flex flex-col justify-center px-8 lg:w-3/4">
+            <h1 class="pt-16 pb-8 text-4xl text-center text-gray-900 uppercase lg:pb-6 md:pt-0 opacity-70">checkmypwd</h1>
+            <div class="relative flex text-gray-700 text-opacity-50 group focus-within:text-gray-900 focus-within:text-opacity-70">
+                <input id="pwd" class="z-10 w-full px-8 py-4 text-2xl placeholder-gray-700 placeholder-opacity-50 transition duration-200 ease-in-out bg-transparent border-b-4 border-gray-700 border-opacity-50 outline-none select-none lg:mx-20 lg:my-2 focus:placeholder-gray-900 focus:border-gray-900 focus:placeholder-opacity-70 focus:border-opacity-70" type="text" placeholder="Enter pwd here">
+                <div class="absolute right-0 flex h-full p-2 space-x-2 lg:right-20">
+                    <button id="clear-button" class="z-20">
+                        <svg class="w-10 h-10" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 -1 1 0 2.5 15.5)">
+                                <path d="m0 5.82842712v7.17157288c0 1.1045695.8954305 2 2 2h6c1.1045695 0 2-.8954305 2-2v-7.17157288c0-.53043297-.21071368-1.0391408-.58578644-1.41421356l-3.70710678-3.70710678c-.39052429-.39052429-1.02368927-.39052429-1.41421356 0l-3.70710678 3.70710678c-.37507276.37507276-.58578644.88378059-.58578644 1.41421356z"></path>
+                                <g transform="matrix(0 1 -1 0 14 4)">
+                                    <path d="m3 11 4-4"></path>
+                                    <path d="m3 7 4 4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <button id="copy-button" class="z-20">
+                        <svg class="w-10 h-10" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)">
+                                <path d="m6.5 11.5-3-3 3-3"></path>
+                                <path d="m3.5 8.5h11"></path>
+                                <path d="m12.5 6.5v-4.00491374c0-.51283735-.3860402-.93550867-.8833789-.99327378l-.1190802-.00672622-1.9975409.00491374m-6 0-1.99754087-.00492752c-.51283429-.00124584-.93645365.38375378-.99544161.88094891l-.00701752.11906329v10.99753792c.00061497.5520447.44795562.9996604 1 1.0006148l10 .0061554c.5128356.0008784.9357441-.3848611.993815-.8821612l.006185-.1172316v-2.5"></path>
+                                <path d="m4.5.5h4c.55228475 0 1 .44771525 1 1s-.44771525 1-1 1h-4c-.55228475 0-1-.44771525-1-1s.44771525-1 1-1z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="px-6 py-4 mx-8 mx-auto mt-12 space-y-4 text-lg text-center bg-gray-500 rounded-sm shadow-inner bg-opacity-10">
+                <p id="security-feature-a">Minimum length is 8</p>
+                <p id="security-feature-b">Contains at least one number</p>
+                <p id="security-feature-c">Maximum length is 22</p>
+                <p id="security-feature-d">Contains a special character</p>
+                <p id="security-feature-e">Does not contain any spaces</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/app.9ef22fb2.js"></script>
+
+</body>
+
+</html>

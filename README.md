@@ -33,3 +33,4 @@ n/a
 ### 2021-08-23
 
 -   responsive re-design
+-   add clear & copy functionality
