@@ -13,7 +13,7 @@ n/a
 ### ToDo
 
 -   [x] re-styling with Tailwind CSS
--   [ ] make web app fully responsive
+-   [x] make web app fully responsive
 
 ## Inspirations
 
@@ -29,3 +29,7 @@ n/a
 ### 2020-12-03
 
 -   re-styling with Tailwind CSS
+
+### 2021-08-23
+
+-   responsive re-design

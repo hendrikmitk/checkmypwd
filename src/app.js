@@ -35,3 +35,5 @@ pwd.addEventListener("input", inspectInput, false);
 pwd.addEventListener("paste", inspectInput, false);
 pwd.addEventListener("change", inspectInput, false);
 pwd.addEventListener("keydown", inspectInput, false);
+
+inspectInput();

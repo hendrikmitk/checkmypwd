@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,EACC,QAAS,CACT,SAAU,CACV,qBACD,CAEA,GACC,mCACD","file":"style.fb9c44b2.css","sourceRoot":"../src","sourcesContent":["* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n}\n\nh1 {\n\tfont-family: 'Press Start 2P', cursive;\n}\n"]}
